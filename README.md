@@ -1,6 +1,7 @@
-# Product Name
-> Short blurb about what your product does.
+# eCamp
+> An Emirates Heritage Club initiative
 
-One to two paragraph statement about your product and what it does.
+eCamp is a mobile & web application, that allows parents to enroll their children
+in any of the camps Emirates Heritage Club (EHC) offers for students.
 
-![](header.png)
+![](eCamp_Mockup.png)
