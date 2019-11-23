@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApplicationModules.Dashboard.Activities.MainBottomBarActivity"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:layout_above="@+id/bottomBar"
+        android:fitsSystemWindows="true">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:background="@drawable/main_content_bg"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:elevation="5dp"
+            android:fitsSystemWindows="true"/>
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@android:color/transparent"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:fitsSystemWindows="true">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsingToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:expandedTitleGravity="bottom"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                android:clipToPadding="false"
+                android:clipChildren="false"
+                android:background="@android:color/transparent"
+                app:collapsedTitleGravity="center_vertical"
+                app:collapsedTitleTextAppearance="@style/collapsedbar"
+                app:expandedTitleTextAppearance="@style/expandedappbar"
+                android:fitsSystemWindows="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:cropToPadding="false"
+                    android:clipChildren="false"
+                    android:background="@android:color/transparent"
+                    android:fitsSystemWindows="true"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0.7">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/banner"
+                        android:scaleType="centerCrop"
+                        app:layout_collapseMode="parallax"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:scaleType="fitXY"
+                        android:adjustViewBounds="false"
+                        android:background="@drawable/title_gradient"
+                        android:layout_alignParentBottom="true"
+                        app:layout_collapseMode="parallax"/>
+                </RelativeLayout>
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    android:minHeight="?attr/actionBarSize"
+                    android:background="@color/colorAccent"
+                    app:titleTextColor="@android:color/white"
+                    android:alpha="0"/>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:backgroundColor="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_menu"
+        app:indicatorColor="#2DFFFFFF"
+        app:iconTint="#99FFFFFF"
+        app:iconTintActive="#FFFFFF"/>
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">eCamp</string>
+
+    <string name="nointernet">Please check your internet connection.</string>
+    <string name="error">Error</string>
+
+    <string name="home">Home</string>
+    <string name="media">Media</string>
+    <string name="more">More</string>
+
+    <string name="alreadyAMember">Already a member?</string>
+    <string name="beAMember">Be a member</string>
+    <string name="login">Sign In</string>
+    <string name="register">Sign Up</string>
+    <string name="latestNews">Latest News</string>
+    <string name="proceed">Proceed</string>
+    <string name="parentLogin">Parent Login</string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+
+    <string name="student_basic_information">Student Basic Information</string>
+    <string name="student_information">Student Information</string>
+    <string name="student_registration">Student Registration</string>
+
+    <string name="student_contact_information">Student Contact Information</string>
+    <string name="parent_contact_information">Parent Contact Information</string>
+    <string name="other_information">Other Information</string>
+    <string name="do_you_have_any_chronic_disease">Do you have any chronic disease?</string>
+
+    <string name="student_name">Student Name</string>
+    <string name="student_mobile">Student Mobile No.</string>
+    <string name="parent_mobile">Parent Mobile No.</string>
+    <string name="student_whatsapp">Student Whatsapp No.</string>
+    <string name="parent_whatsapp">Parent Whatsapp No.</string>
+    <string name="grade">Grade</string>
+    <string name="school">School</string>
+    <string name="dob">Date of Birth</string>
+    <string name="center">Center</string>
+    <string name="blood_group">Blood Group</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="student_email">Student Email</string>
+    <string name="parent_email">Parent Email</string>
+    <string name="parent_work_place">Parent Work Place</string>
+    <string name="student_passport_no">Passport No.</string>
+    <string name="student_passport_expiry">Passport Expiry Date</string>
+    <string name="student_emirates_id">Student Emirates ID</string>
+    <string name="student_emirates_id_expiry">Emirates ID Expiry Date</string>
+    <string name="student_weight">Student Weight (Kg.)</string>
+    <string name="next">Next</string>
+    <string name="submit">Submit</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="student_photo">Student Photograph</string>
+    <string name="medical_report">Medical Report</string>
+    <string name="parent_consent">Parent Consent</string>
+
+
+    <string name="location">Location</string>
+    <string name="region">Region</string>
+
+    <string name="upload_attachments">Upload files</string>
+    <string name="student_registration_success">Student registration completed!</string>
+    <string name="download">Download as PDF</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
