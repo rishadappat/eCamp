@@ -30,17 +30,18 @@ class ParentLoginActivity : BaseActivity() {
     }
     private fun performLogin()
     {
-        if(editTextUsername.text!!.isEmpty()) {
-            Utility.showFlashBar(this, Utility.getString(R.string.please_enter_username, this))
-        }
-        else if(editTextPassword.text!!.isEmpty()) {
-            Utility.showFlashBar(this, Utility.getString(R.string.please_enter_password, this))
-        }
-        else
-        {
-            AppPreferences.setIsUserLoggedIn(true)
-            val intent = Intent(this, MainBottomBarActivity::class.java)
-            startActivity(intent)
+        when {
+            editTextUsername.text!!.isEmpty() -> {
+                Utility.showFlashBar(this, Utility.getString(R.string.please_enter_username, this))
+            }
+            editTextPassword.text!!.isEmpty() -> {
+                Utility.showFlashBar(this, Utility.getString(R.string.please_enter_password, this))
+            }
+            else -> {
+                AppPreferences.setIsUserLoggedIn(true)
+                val intent = Intent(this, MainBottomBarActivity::class.java)
+                startActivity(intent)
+            }
         }
     }
 }
