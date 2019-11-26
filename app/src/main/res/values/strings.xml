@@ -8,6 +8,9 @@
     <string name="media">Media</string>
     <string name="more">More</string>
 
+    <string name="please_enter_username">Please enter username.</string>
+    <string name="please_enter_password">Please enter password.</string>
+
     <string name="alreadyAMember">Already a member?</string>
     <string name="beAMember">Be a member</string>
     <string name="login">Sign In</string>

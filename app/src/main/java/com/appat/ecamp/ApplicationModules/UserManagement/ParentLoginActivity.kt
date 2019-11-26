@@ -31,10 +31,10 @@ class ParentLoginActivity : BaseActivity() {
     private fun performLogin()
     {
         if(editTextUsername.text!!.isEmpty()) {
-            Utility.showFlashBar(this, Utility.getString(R.string.media, this))
+            Utility.showFlashBar(this, Utility.getString(R.string.please_enter_username, this))
         }
         else if(editTextPassword.text!!.isEmpty()) {
-            Utility.showFlashBar(this, Utility.getString(R.string.media, this))
+            Utility.showFlashBar(this, Utility.getString(R.string.please_enter_password, this))
         }
         else
         {
