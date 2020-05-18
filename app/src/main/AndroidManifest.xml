@@ -16,7 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ApplicationModules.StudentInformationModule.StudentRegistrationSuccessActivity"
+        <activity android:name=".TestActivity"></activity>
+        <activity
+            android:name=".ApplicationModules.StudentInformationModule.StudentRegistrationSuccessActivity"
             android:theme="@style/AppThemeNoActionBar" />
         <activity
             android:name=".ApplicationModules.StudentInformationModule.StudentAttachmentUploadActivity"
